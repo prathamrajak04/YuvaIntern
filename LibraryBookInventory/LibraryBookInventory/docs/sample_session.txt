@@ -1,0 +1,112 @@
+=== Library Book Inventory ===
+
+------------------------------------------------------------------------------
+ 1. Add a book
+ 2. List all books
+ 3. View a book by ISBN
+ 4. Search by title or author
+ 5. Update a book
+ 6. Delete a book
+ 7. Exit
+------------------------------------------------------------------------------
+Choose an option (1-7): 2
+
+The library has no books yet. Choose option 1 to add one.
+
+[menu shown again]
+Choose an option (1-7): 9
+  ! Invalid option. Please enter a number from 1 to 7.
+
+[menu shown again]
+Choose an option (1-7): 1
+
+-- Add a new book --
+ISBN (10 or 13 digits): 12345
+  ! ISBN must have 10 or 13 digits (hyphens allowed), for example 978-0-13-468599-1.
+ISBN (10 or 13 digits): 978-0-13-468599-1
+Title: Effective Java
+Author: 
+  ! Author cannot be empty.
+Author: Joshua Bloch
+Publication year: twenty
+  ! Publication year must be a whole number, for example 2018.
+Publication year: 2018
+  Added: "Effective Java" by Joshua Bloch (2018), ISBN 9780134685991
+
+[menu shown again]
+Choose an option (1-7): 1
+
+-- Add a new book --
+ISBN (10 or 13 digits): 9780132350884
+Title: Clean Code
+Author: Robert C. Martin
+Publication year: 2008
+  Added: "Clean Code" by Robert C. Martin (2008), ISBN 9780132350884
+
+[menu shown again]
+Choose an option (1-7): 1
+
+-- Add a new book --
+ISBN (10 or 13 digits): 9780134685991
+Title: Dup
+Author: X
+Publication year: 2001
+  ! A book with ISBN 9780134685991 already exists.
+
+[menu shown again]
+Choose an option (1-7): 2
+
+ISBN           Title                            Author                 Year
+------------------------------------------------------------------------------
+9780132350884  Clean Code                       Robert C. Martin       2008
+9780134685991  Effective Java                   Joshua Bloch           2018
+------------------------------------------------------------------------------
+2 books
+
+[menu shown again]
+Choose an option (1-7): 5
+
+ISBN of the book to update: 9780132350884
+  Current: "Clean Code" by Robert C. Martin (2008), ISBN 9780132350884
+  (press Enter to keep the current value)
+New title [Clean Code]: 
+New author [Robert C. Martin]: 
+New year [2008]: 2009
+  Updated: "Clean Code" by Robert C. Martin (2009), ISBN 9780132350884
+
+[menu shown again]
+Choose an option (1-7): 6
+
+ISBN of the book to delete: 9780132350884
+  "Clean Code" by Robert C. Martin (2009), ISBN 9780132350884
+  Really delete this book? (y/n): n
+  Cancelled. The book was not deleted.
+
+[menu shown again]
+Choose an option (1-7): 3
+
+ISBN of the book: 0000000000
+  ! No book found with ISBN 0000000000.
+
+[menu shown again]
+Choose an option (1-7): 6
+
+ISBN of the book to delete: 9780132350884
+  "Clean Code" by Robert C. Martin (2009), ISBN 9780132350884
+  Really delete this book? (y/n): y
+  Deleted.
+
+[menu shown again]
+Choose an option (1-7): 4
+
+Search text (part of a title or author): effective
+
+ISBN           Title                            Author                 Year
+------------------------------------------------------------------------------
+9780134685991  Effective Java                   Joshua Bloch           2018
+------------------------------------------------------------------------------
+1 book
+
+[menu shown again]
+Choose an option (1-7): 7
+Goodbye!
